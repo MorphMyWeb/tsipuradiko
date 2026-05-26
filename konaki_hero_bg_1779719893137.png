@@ -1,0 +1,43 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+export interface MenuItem {
+  id: string;
+  name?: string; // Dynamic based on language or dual
+  greekName: string;
+  foreignName?: string; // Secondary translated name
+  foreignLang?: 'en' | 'bg' | 'ru' | 'multilingual';
+  description: string;
+  englishDescription?: string;
+  price: number; // e.g. 8.5
+  isLocalSpecialty?: boolean; // e.g. local mussels
+  tags?: string[]; // e.g., ['Φρέσκο', 'Τοπικό', 'Δημοφιλές']
+}
+
+export interface MenuCategory {
+  id: string;
+  name: string;
+  icon: string; // Lucide icon name
+  description: string;
+  items: MenuItem[];
+}
+
+export interface WorkingHour {
+  day: string;
+  open: string; // "12:00"
+  close: string; // "23:30"
+  isClosed: boolean;
+}
+
+export interface Reservation {
+  id?: string;
+  name: string;
+  phone: string;
+  date: string;
+  time: string;
+  guests: number;
+  status?: 'pending' | 'confirmed' | 'completed' | 'cancelled';
+  createdAt?: string;
+}

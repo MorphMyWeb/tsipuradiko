@@ -1,0 +1,8 @@
+{
+  "name": "Το Κονάκι",
+  "description": "Μεζεδοπωλείο & Τσιπουράδικο 'Το Κονάκι' στα Κύμινα. Αυθεντικοί θαλασσινοί μεζέδες, φρέσκα ψαρικά και παραδοσιακή ελληνική φιλοξενία.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
